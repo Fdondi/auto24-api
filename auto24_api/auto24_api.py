@@ -96,7 +96,7 @@ class Auto24API:
             else None
         )
         return uc.Chrome(
-            service = ChromeService(ChromeDriverManager().install()),
+            service = ChromeService(),
             user_data_dir=user_data_dir,
             options=options,
             desired_capabilities=caps,
